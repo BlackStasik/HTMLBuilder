@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>HTMLBuider</title>
+  <script type="text/javascript" src="htmlb.js"></script>
+  <link rel="stylesheet" type="text/css" href="builder.css"></link>
+<body>
+
+  <div class="container borderDiv">
+
+    <div class="menuContainer borderDiv">
+      <div class="borderDiv">
+        <header>
+              <nav>
+                <ul class="metro">
+                  <li>  <h3 class="el">Elements</h3></li>
+                  <li><a onclick="createMeta()">Meta</a></li>
+                  <li><a onclick="createDiv()">Div</a></li>
+                  <li><a onclick="createLink()">Link</a></li>
+                  <li><a onclick="createImg()">Img</a></li>
+                  <li><a >Input</a></li>
+                      <ul class="submenu">
+                      <li><a href="#" onclick="createTF()">TextField</a></li>
+                      <li><a href="#" onclick="createTA()">Textarea</a></li>
+                      <li><a href="#" onclick="createButton()">Button</a></li>
+                    </ul>
+                  <li><a href="#" class="submenu-link">Text</a>
+                    <ul class="submenu">
+                      <li><a href="#" onclick="createH1()">H1</a></li>
+                      <li><a href="#" onclick="createH2()">H2</a></li>
+                      <li><a href="#" onclick="createH3()">H3</a></li>
+                      <li><a href="#" onclick="createH4()">H4</a></li>
+                      <li><a href="#" onclick="createH5()">H5</a></li>
+                      <li><a href="#" onclick="createH6()">H6</a></li>
+                      <li><a href="#" onclick="createP()">P</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" onclick="createCenter()">Center</a></li>
+                  <li><a href="#" onclick="createSelect()">Select</a></li>
+                  <li><a href="#" onclick="createOption()">Option</a></li>
+                </ul>
+              </nav>
+      </header>
+
+      </div>
+
+
+      <div id="selectedItem" class="borderDiv" style="padding: 5px">
+      		
+      </div> 
+    </div>
+
+
+    <div class="workSpaceContainer borderDiv">
+      <div id="mainItemsContainer" class="borderDiv color" onclick="getId()">
+
+
+      </div>
+
+      <div class="btn-group borderDiv">
+            <button class="button black" onclick="addOrEditElement()">Add/Edit element</button>
+            <button class="button black" onclick="deleteItem()">Delete element</button>
+            <button class="button black" onclick="getHTMLCode()">Get html code</button>
+            <button class="button black" onclick="backToWork()">Back to work</button>
+      </div>
+  </div>
+
+</div>
+  
+
+</body>
+</html>
